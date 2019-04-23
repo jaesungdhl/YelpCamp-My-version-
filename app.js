@@ -11,6 +11,6 @@ App.get("/", (req,res) => {
     res.render("landing");
 })
 
-App.listen(3003, () => {
+App.listen(process.env.PORT || 3003, () => {
     console.log("Server has started running.")
 })
