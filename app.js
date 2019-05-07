@@ -11,6 +11,10 @@ App.get("/", (req,res) => {
     res.render("landing");
 })
 
+App.get("/campgrounds", (req,res) => {
+    res.render("campgrounds");
+})
+
 App.listen(process.env.PORT || 3003, () => {
     console.log("Server has started running.")
 })
